@@ -1,10 +1,9 @@
-import static ui.UIMenu.*;
+import model.Patient;
 
 public class Main {
     public static void main(String[] args) {
-        showMenu();
+        //showMenu();
+        Patient patient = new Patient("juan", "juan@hotmail.com");
+        System.out.println(patient);
     }
-
-
-
 }
