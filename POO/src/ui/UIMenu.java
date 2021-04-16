@@ -33,7 +33,7 @@ public class UIMenu {
 
             switch (response){
                 case 1:
-                    System.out.println("model.Doctor");
+                    System.out.println("Doctor");
                     response = 0;
                     authUser(1);
                     break;
@@ -74,7 +74,7 @@ public class UIMenu {
                     if (d.getEmail().equals(email)){
                         emailCorrect = true;
                         doctorLogged = d;
-
+                        UIDoctorMenu.showDoctorMenu();
                     }
                 }
             }
@@ -93,7 +93,7 @@ public class UIMenu {
         int response = 0;
         do {
             System.out.println("\n\n");
-            System.out.println("model.Patient");
+            System.out.println("Patient");
             System.out.println("1. Book an appointment");
             System.out.println("2. My appointments");
             System.out.println("0. Return");
